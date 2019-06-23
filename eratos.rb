@@ -2,7 +2,7 @@ require 'complex'
 
 class Eratos
 
-    def self.print_prime_numbers(input)
+    def self.prime_numbers(input)
 
         # 入力チェク
         return puts "[ERROR] Invalid Inputs" if input.length != 1
@@ -39,7 +39,7 @@ class Eratos
 
     # 直接呼び出し用
     if __FILE__ == $0
-        print_prime_numbers(ARGV)
+        prime_numbers(ARGV)
     end
 
 end
